@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'active_support/core_ext/array/extract_options'
 require 'active_support/core_ext/hash/keys'
 require 'active_support/core_ext/hash/except'
@@ -277,7 +278,7 @@ module ActiveModel
     #
     #   person = Person.new
     #   person.valid? # => false
-    #   person.errors # => #<ActiveModel::Errors:0x007fe603816640 @messages={name:["can't be blank"]}>
+    #   person.errors # => #<ActiveModel::Errors:0x007fe603816640 @messages={name:["can’t be blank"]}>
     def errors
       @errors ||= Errors.new(self)
     end

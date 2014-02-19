@@ -1,3 +1,4 @@
+# encoding: utf-8
 require File.expand_path('../../../load_paths', __FILE__)
 require 'active_model'
 
@@ -24,7 +25,7 @@ end
 
 person1 = Person.new
 p person1.valid? # => false
-p person1.errors.messages # => {:name=>["can't be blank"]}
+p person1.errors.messages # => {:name=>["can’t be blank"]}
 
 person2 = Person.new(name: 'matz')
 p person2.valid? # => true

@@ -1,3 +1,4 @@
+# encoding: utf-8
 module ActiveRecord
   module Associations
     # Association proxies in Active Record are middlemen between the object that
@@ -296,7 +297,7 @@ module ActiveRecord
       #   end
       #
       #   person.pets.create!(name: nil)
-      #   # => ActiveRecord::RecordInvalid: Validation failed: Name can't be blank
+      #   # => ActiveRecord::RecordInvalid: Validation failed: Name can’t be blank
       def create!(attributes = {}, &block)
         @association.create!(attributes, &block)
       end
