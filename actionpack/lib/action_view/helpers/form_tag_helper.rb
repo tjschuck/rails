@@ -37,6 +37,7 @@ module ActionView
       #   support browsers without JavaScript.
       # * <tt>:remote</tt> - If set to true, will allow the Unobtrusive JavaScript drivers to control the
       #   submit behavior. By default this behavior is an ajax submit.
+      # * Any other key creates standard HTML attributes for the tag.
       #
       # ==== Examples
       #   form_tag('/posts')
